@@ -83,15 +83,6 @@
         transform: rotate(-25deg);
       }
 
-      .profil-lingkaran {
-        width: 140px;
-        height: 140px;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 5px solid #ffffff;
-        box-shadow: 0 10px 25px rgba(255, 133, 161, 0.25);
-      }
-
       .badge-girly {
         background-color: var(--pastel-pink);
         color: #8b3a52;
@@ -142,39 +133,12 @@
         color: #ffffff;
         transform: scale(1.02);
       }
-
-      /* Tombol WhatsApp Mengambang Ceria */
-      .whatsapp-float {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 35px;
-        right: 35px;
-        background-color: #25d366;
-        color: #fff;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        transition: transform 0.2s;
-      }
-
-      .whatsapp-float:hover {
-        transform: scale(1.1);
-        color: #fff;
-      }
     </style>
   </head>
   <body>
     <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-expand-lg fixed-top py-3">
       <div class="container">
-        <!-- Logo / Nama dengan Sentuhan Manis -->
         <a
           class="navbar-brand fw-bold text-dark fs-4 d-flex align-items-center gap-2"
           href="#"
@@ -182,8 +146,6 @@
           <span>Elfa Yunisa</span>
           <span style="font-size: 1.2rem">🎀✨</span>
         </a>
-
-        <!-- Tombol Tampilan Mobile (Hamburger Menu) -->
         <button
           class="navbar-toggler border-0 shadow-none"
           type="button"
@@ -195,8 +157,6 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Menu Navigasi Tengah & Tombol Kontak -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul
             class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium gap-lg-3 text-center py-2 py-lg-0"
@@ -211,8 +171,6 @@
               <a class="nav-link text-dark px-3" href="#kontak">Layanan</a>
             </li>
           </ul>
-
-          <!-- Tombol Hubungi Saya -->
           <div class="text-center text-lg-end">
             <a
               href="#kontak"
@@ -225,32 +183,31 @@
       </div>
     </nav>
 
-    <!-- 1. HERO SECTION (REVISI KATAKATA PROFESSIONAL TERPERCAYA) -->
+    <!-- 1. HERO SECTION -->
     <section class="hero-section text-center">
-      <!-- Bunga-Bunga Cantik Bertaburan -->
       <span class="flower-decor flower-1">🌸</span>
       <span class="flower-decor flower-2">🌺</span>
       <span class="flower-decor flower-3">🌷</span>
       <span class="flower-decor flower-4">✨</span>
 
       <div class="container position-relative" style="z-index: 2">
-        <!-- Foto Profil -->
         <div class="mb-3">
-        <span class="badge badge-girly mb-3 d-inline-block"
-          >🌸 Web Developer & UI/UX Designer</span
-        >
-        <h1 class="display-5 fw-bold mb-3" style="color: #433038">
-          Solusi Website Modern, Elegan, & Terpercaya
-        </h1>
-        <p class="text-secondary mx-auto mb-4" style="max-width: 620px">
-          Membantu bisnis, UMKM, dan instansi membangun platform digital yang
-          cepat, aman, responsif, dan dirancang dengan estetika antarmuka
-          berkelas.
-        </p>
-        <div class="d-flex justify-content-center gap-3">
-          <a href="#proyek" class="btn btn-pastel-pink"
-            >Lihat Koleksi Proyek 💖</a
+          <span class="badge badge-girly mb-3 d-inline-block"
+            >🌸 Web Developer & UI/UX Designer</span
           >
+          <h1 class="display-5 fw-bold mb-3" style="color: #433038">
+            Solusi Website Modern, Elegan, & Terpercaya
+          </h1>
+          <p class="text-secondary mx-auto mb-4" style="max-width: 620px">
+            Membantu bisnis, UMKM, dan instansi membangun platform digital yang
+            cepat, aman, responsif, dan dirancang dengan estetika antarmuka
+            berkelas.
+          </p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#proyek" class="btn btn-pastel-pink"
+              >Lihat Koleksi Proyek 💖</a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -407,6 +364,36 @@
               </div>
             </div>
           </div>
+
+          <!-- Proyek 5: Kedai Kopi Kita (POS System) -->
+          <div class="col-md-6 col-lg-5">
+            <div class="card card-pastel h-100 p-4">
+              <div
+                class="card-body p-0 d-flex flex-column justify-content-between"
+              >
+                <div>
+                  <span class="badge badge-category mb-2"
+                    >Google Apps Script</span
+                  >
+                  <h4 class="fw-bold mt-1 mb-2">
+                    Kedai Kopi Kita (POS System)
+                  </h4>
+                  <p class="small text-muted mb-4">
+                    Aplikasi sistem Point of Sales (POS) interaktif berbasis
+                    Google Apps Script untuk manajemen pesanan, produk,
+                    kategori, hingga laporan keuangan.
+                  </p>
+                </div>
+                <button
+                  class="btn btn-sm btn-dark rounded-pill w-100 mt-2 py-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalAppsScript"
+                >
+                  Lihat Detail Proyek 🌸
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -441,12 +428,24 @@
       </div>
     </footer>
 
-<!-- MODAL 1: WEBSITE HIJABKU (GAMBAR UTUH TIDAK KEPOTONG) -->
+    <!-- MODAL 1: WEBSITE HIJABKU -->
     <div class="modal fade" id="modalHijabku" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content rounded-4 border-0 p-3 shadow-lg" style="background: linear-gradient(135deg, #fff0f3 0%, #fff9fa 100%); border: 2px solid #ffccd5 !important;">
+        <div
+          class="modal-content rounded-4 border-0 p-3 shadow-lg"
+          style="
+            background: linear-gradient(135deg, #fff0f3 0%, #fff9fa 100%);
+            border: 2px solid #ffccd5 !important;
+          "
+        >
           <div class="modal-header border-0 pb-0">
-            <h4 class="modal-title fw-bold" style="font-family: 'Quicksand', sans-serif; color: #4a353f;">
+            <h4
+              class="modal-title fw-bold"
+              style="
+                font-family: &quot;Quicksand&quot;, sans-serif;
+                color: #4a353f;
+              "
+            >
               🛍️ Website E-Commerce Hijabku
             </h4>
             <button
@@ -458,62 +457,154 @@
           </div>
           <div class="modal-body py-4">
             <div class="row g-4 align-items-center">
-              <!-- Sisi Kiri: Galeri Gambar Tampil Utuh (Contain) -->
               <div class="col-lg-7">
                 <div class="row g-3">
                   <div class="col-12">
-                    <div class="p-2 rounded-4 shadow-sm bg-white border" style="border-color: #ffccd5 !important;">
+                    <div
+                      class="p-2 rounded-4 shadow-sm bg-white border"
+                      style="border-color: #ffccd5 !important"
+                    >
                       <img
                         src="DASHBOARD1.png"
                         class="img-fluid rounded-3 w-100"
                         alt="Halaman Utama Hijabku"
-                        style="max-height: 260px; object-fit: contain; background-color: #ffffff;"
+                        style="
+                          max-height: 260px;
+                          object-fit: contain;
+                          background-color: #ffffff;
+                        "
                       />
-                      <p class="text-center small fw-semibold mt-2 mb-0" style="color: #8b3a52;">🌸 Pratinjau Halaman Beranda (Home)</p>
+                      <p
+                        class="text-center small fw-semibold mt-2 mb-0"
+                        style="color: #8b3a52"
+                      >
+                        🌸 Pratinjau Halaman Beranda (Home)
+                      </p>
                     </div>
                   </div>
                   <div class="col-12">
-                    <div class="p-2 rounded-4 shadow-sm bg-white border" style="border-color: #ffccd5 !important;">
+                    <div
+                      class="p-2 rounded-4 shadow-sm bg-white border"
+                      style="border-color: #ffccd5 !important"
+                    >
                       <img
                         src="KATEGORI.png"
                         class="img-fluid rounded-3 w-100"
                         alt="Katalog Kategori Hijabku"
-                        style="max-height: 260px; object-fit: contain; background-color: #ffffff;"
+                        style="
+                          max-height: 260px;
+                          object-fit: contain;
+                          background-color: #ffffff;
+                        "
                       />
-                      <p class="text-center small fw-semibold mt-2 mb-0" style="color: #8b3a52;">🌸 Pratinjau Katalog & Kategori Produk</p>
+                      <p
+                        class="text-center small fw-semibold mt-2 mb-0"
+                        style="color: #8b3a52"
+                      >
+                        🌸 Pratinjau Katalog & Kategori Produk
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <!-- Sisi Kanan: Penjelasan & Detail Proyek -->
               <div class="col-lg-5">
-                <div class="p-3 rounded-4 shadow-sm" style="background-color: rgba(255, 255, 255, 0.9); border: 1.5px solid #ffccd5;">
-                  <span class="badge mb-3 px-3 py-2 rounded-pill fw-bold" style="background-color: #ffccd5; color: #8b3a52; font-size: 0.8rem;">
+                <div
+                  class="p-3 rounded-4 shadow-sm"
+                  style="
+                    background-color: rgba(255, 255, 255, 0.9);
+                    border: 1.5px solid #ffccd5;
+                  "
+                >
+                  <span
+                    class="badge mb-3 px-3 py-2 rounded-pill fw-bold"
+                    style="
+                      background-color: #ffccd5;
+                      color: #8b3a52;
+                      font-size: 0.8rem;
+                    "
+                  >
                     🌸 Featured E-Commerce Project
                   </span>
-                  <h5 class="fw-bold mb-2" style="font-family: 'Quicksand', sans-serif; color: #3b3036;">Tentang Proyek Ini</h5>
-                  <p class="text-secondary small mb-3" style="line-height: 1.6;">
-                    <strong>Website Hijabku</strong> adalah platform toko online busana muslimah modern yang dirancang khusus untuk memberikan pengalaman belanja yang mulus, cepat, dan estetik bagi pelanggan.
+                  <h5
+                    class="fw-bold mb-2"
+                    style="
+                      font-family: &quot;Quicksand&quot;, sans-serif;
+                      color: #3b3036;
+                    "
+                  >
+                    Tentang Proyek Ini
+                  </h5>
+                  <p class="text-secondary small mb-3" style="line-height: 1.6">
+                    <strong>Website Hijabku</strong> adalah platform toko online
+                    busana muslimah modern yang dirancang khusus untuk
+                    memberikan pengalaman belanja yang mulus, cepat, dan estetik
+                    bagi pelanggan.
                   </p>
-
-                  <h6 class="fw-bold small mb-2" style="color: #4a353f;">✨ Fitur Unggulan:</h6>
-                  <ul class="list-unstyled small text-secondary mb-3" style="line-height: 1.8;">
-                    <li>🛍️ <strong>Katalog Interaktif:</strong> Menampilkan koleksi pashmina dan hijab eksklusif.</li>
-                    <li>🛒 <strong>Sistem Keranjang:</strong> Memudahkan pengguna memilih dan mengelola produk.</li>
-                    <li>💬 <strong>Direct WhatsApp Checkout:</strong> Tombol pemesanan instan langsung ke WhatsApp.</li>
-                    <li>📱 <strong>Fully Responsive:</strong> Nyaman diakses lewat HP maupun laptop.</li>
+                  <h6 class="fw-bold small mb-2" style="color: #4a353f">
+                    ✨ Fitur Unggulan:
+                  </h6>
+                  <ul
+                    class="list-unstyled small text-secondary mb-3"
+                    style="line-height: 1.8"
+                  >
+                    <li>
+                      🛍️ <strong>Katalog Interaktif:</strong> Menampilkan
+                      koleksi pashmina dan hijab eksklusif.
+                    </li>
+                    <li>
+                      🛒 <strong>Sistem Keranjang:</strong> Memudahkan pengguna
+                      memilih dan mengelola produk.
+                    </li>
+                    <li>
+                      💬 <strong>Direct WhatsApp Checkout:</strong> Tombol
+                      pemesanan instan langsung ke WhatsApp.
+                    </li>
+                    <li>
+                      📱 <strong>Fully Responsive:</strong> Nyaman diakses lewat
+                      HP maupun laptop.
+                    </li>
                   </ul>
-
-                  <h6 class="fw-bold small mb-2" style="color: #4a353f;">🛠️ Teknologi yang Digunakan:</h6>
+                  <h6 class="fw-bold small mb-2" style="color: #4a353f">
+                    🛠️ Teknologi yang Digunakan:
+                  </h6>
                   <div class="mb-4">
-                    <span class="badge me-1 mb-1 px-2 py-1" style="background-color: #fff0f3; color: #ff7096; border: 1px solid #ffccd5;">HTML5 & CSS3</span>
-                    <span class="badge me-1 mb-1 px-2 py-1" style="background-color: #f3e8ff; color: #8b5cf6; border: 1px solid #e9d5ff;">JavaScript (ES6)</span>
-                    <span class="badge me-1 mb-1 px-2 py-1" style="background-color: #e2ece9; color: #2d6a4f; border: 1px solid #b7e4c7;">Bootstrap 5</span>
-                    <span class="badge mb-1 px-2 py-1" style="background-color: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd;">WhatsApp API</span>
+                    <span
+                      class="badge me-1 mb-1 px-2 py-1"
+                      style="
+                        background-color: #fff0f3;
+                        color: #ff7096;
+                        border: 1px solid #ffccd5;
+                      "
+                      >HTML5 & CSS3</span
+                    >
+                    <span
+                      class="badge me-1 mb-1 px-2 py-1"
+                      style="
+                        background-color: #f3e8ff;
+                        color: #8b5cf6;
+                        border: 1px solid #e9d5ff;
+                      "
+                      >JavaScript (ES6)</span
+                    >
+                    <span
+                      class="badge me-1 mb-1 px-2 py-1"
+                      style="
+                        background-color: #e2ece9;
+                        color: #2d6a4f;
+                        border: 1px solid #b7e4c7;
+                      "
+                      >Bootstrap 5</span
+                    >
+                    <span
+                      class="badge mb-1 px-2 py-1"
+                      style="
+                        background-color: #e0f2fe;
+                        color: #0284c7;
+                        border: 1px solid #bae6fd;
+                      "
+                      >WhatsApp API</span
+                    >
                   </div>
-
-                  <!-- Tombol Aksi -->
                   <div class="d-grid">
                     <a
                       href="https://elfayunisa.github.io/Hijabku/"
@@ -531,12 +622,24 @@
       </div>
     </div>
 
-<!-- MODAL 2: SISTEM E-ARWANA (PASTEL SOFT & RAPI) -->
+    <!-- MODAL 2: SISTEM E-ARWANA -->
     <div class="modal fade" id="modalArwana" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content rounded-4 border-0 p-3 shadow-lg" style="background: linear-gradient(135deg, #fff0f3 0%, #fff9fa 100%); border: 2px solid #ffccd5 !important;">
+        <div
+          class="modal-content rounded-4 border-0 p-3 shadow-lg"
+          style="
+            background: linear-gradient(135deg, #fff0f3 0%, #fff9fa 100%);
+            border: 2px solid #ffccd5 !important;
+          "
+        >
           <div class="modal-header border-0 pb-0">
-            <h4 class="modal-title fw-bold" style="font-family: 'Quicksand', sans-serif; color: #4a353f;">
+            <h4
+              class="modal-title fw-bold"
+              style="
+                font-family: &quot;Quicksand&quot;, sans-serif;
+                color: #4a353f;
+              "
+            >
               📂 Sistem Manajemen Kearsipan E-ARWANA
             </h4>
             <button
@@ -548,62 +651,154 @@
           </div>
           <div class="modal-body py-4">
             <div class="row g-4 align-items-center">
-              <!-- Sisi Kiri: Galeri Gambar Utuh Vertikal -->
               <div class="col-lg-7">
                 <div class="row g-3">
                   <div class="col-12">
-                    <div class="p-2 rounded-4 shadow-sm bg-white border" style="border-color: #ffccd5 !important;">
+                    <div
+                      class="p-2 rounded-4 shadow-sm bg-white border"
+                      style="border-color: #ffccd5 !important"
+                    >
                       <img
                         src="login.jpg"
                         class="img-fluid rounded-3 w-100"
                         alt="Halaman Login E-ARWANA"
-                        style="max-height: 260px; object-fit: contain; background-color: #ffffff;"
+                        style="
+                          max-height: 260px;
+                          object-fit: contain;
+                          background-color: #ffffff;
+                        "
                       />
-                      <p class="text-center small fw-semibold mt-2 mb-0" style="color: #8b3a52;">🌸 Pratinjau Halaman Login Sistem</p>
+                      <p
+                        class="text-center small fw-semibold mt-2 mb-0"
+                        style="color: #8b3a52"
+                      >
+                        🌸 Pratinjau Halaman Login Sistem
+                      </p>
                     </div>
                   </div>
                   <div class="col-12">
-                    <div class="p-2 rounded-4 shadow-sm bg-white border" style="border-color: #ffccd5 !important;">
+                    <div
+                      class="p-2 rounded-4 shadow-sm bg-white border"
+                      style="border-color: #ffccd5 !important"
+                    >
                       <img
                         src="dashboard.png"
                         class="img-fluid rounded-3 w-100"
                         alt="Dashboard E-ARWANA"
-                        style="max-height: 260px; object-fit: contain; background-color: #ffffff;"
+                        style="
+                          max-height: 260px;
+                          object-fit: contain;
+                          background-color: #ffffff;
+                        "
                       />
-                      <p class="text-center small fw-semibold mt-2 mb-0" style="color: #8b3a52;">🌸 Pratinjau Dashboard Utama & Rekapitulasi</p>
+                      <p
+                        class="text-center small fw-semibold mt-2 mb-0"
+                        style="color: #8b3a52"
+                      >
+                        🌸 Pratinjau Dashboard Utama & Rekapitulasi
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <!-- Sisi Kanan: Penjelasan & Detail Proyek -->
               <div class="col-lg-5">
-                <div class="p-3 rounded-4 shadow-sm" style="background-color: rgba(255, 255, 255, 0.9); border: 1.5px solid #ffccd5;">
-                  <span class="badge mb-3 px-3 py-2 rounded-pill fw-bold" style="background-color: #ffccd5; color: #8b3a52; font-size: 0.8rem;">
+                <div
+                  class="p-3 rounded-4 shadow-sm"
+                  style="
+                    background-color: rgba(255, 255, 255, 0.9);
+                    border: 1.5px solid #ffccd5;
+                  "
+                >
+                  <span
+                    class="badge mb-3 px-3 py-2 rounded-pill fw-bold"
+                    style="
+                      background-color: #ffccd5;
+                      color: #8b3a52;
+                      font-size: 0.8rem;
+                    "
+                  >
                     🌸 Web Application Project
                   </span>
-                  <h5 class="fw-bold mb-2" style="font-family: 'Quicksand', sans-serif; color: #3b3036;">Tentang Proyek Ini</h5>
-                  <p class="text-secondary small mb-3" style="line-height: 1.6;">
-                    <strong>Sistem E-ARWANA</strong> adalah aplikasi berbasis web yang dirancang khusus untuk mengoptimalkan efisiensi tata kelola kearsipan digital instansi secara terstruktur dan aman.
+                  <h5
+                    class="fw-bold mb-2"
+                    style="
+                      font-family: &quot;Quicksand&quot;, sans-serif;
+                      color: #3b3036;
+                    "
+                  >
+                    Tentang Proyek Ini
+                  </h5>
+                  <p class="text-secondary small mb-3" style="line-height: 1.6">
+                    <strong>Sistem E-ARWANA</strong> adalah aplikasi berbasis
+                    web yang dirancang khusus untuk mengoptimalkan efisiensi
+                    tata kelola kearsipan digital instansi secara terstruktur
+                    dan aman.
                   </p>
-
-                  <h6 class="fw-bold small mb-2" style="color: #4a353f;">✨ Fitur Unggulan:</h6>
-                  <ul class="list-unstyled small text-secondary mb-3" style="line-height: 1.8;">
-                    <li>📑 <strong>Manajemen Surat:</strong> Pengelolaan agenda surat masuk dan keluar secara digital.</li>
-                    <li>📊 <strong>Dashboard Rekap:</strong> Memantau rekapitulasi data arsip dengan cepat.</li>
-                    <li>🔒 <strong>Autentikasi Aman:</strong> Sistem login berbasis peran untuk melindungi data instansi.</li>
-                    <li>⚡ <strong>Efisiensi Operasional:</strong> Mempermudah pencarian arsip tanpa dokumen fisik.</li>
+                  <h6 class="fw-bold small mb-2" style="color: #4a353f">
+                    ✨ Fitur Unggulan:
+                  </h6>
+                  <ul
+                    class="list-unstyled small text-secondary mb-3"
+                    style="line-height: 1.8"
+                  >
+                    <li>
+                      📑 <strong>Manajemen Surat:</strong> Pengelolaan agenda
+                      surat masuk dan keluar secara digital.
+                    </li>
+                    <li>
+                      📊 <strong>Dashboard Rekap:</strong> Memantau rekapitulasi
+                      data arsip dengan cepat.
+                    </li>
+                    <li>
+                      🔒 <strong>Autentikasi Aman:</strong> Sistem login
+                      berbasis peran untuk melindungi data instansi.
+                    </li>
+                    <li>
+                      ⚡ <strong>Efisiensi Operasional:</strong> Mempermudah
+                      pencarian arsip tanpa dokumen fisik.
+                    </li>
                   </ul>
-
-                  <h6 class="fw-bold small mb-2" style="color: #4a353f;">🛠️ Teknologi yang Digunakan:</h6>
+                  <h6 class="fw-bold small mb-2" style="color: #4a353f">
+                    🛠️ Teknologi yang Digunakan:
+                  </h6>
                   <div class="mb-4">
-                    <span class="badge me-1 mb-1 px-2 py-1" style="background-color: #f3e8ff; color: #8b5cf6; border: 1px solid #e9d5ff;">PHP Native</span>
-                    <span class="badge me-1 mb-1 px-2 py-1" style="background-color: #e2ece9; color: #2d6a4f; border: 1px solid #b7e4c7;">MySQL Database</span>
-                    <span class="badge me-1 mb-1 px-2 py-1" style="background-color: #fff0f3; color: #ff7096; border: 1px solid #ffccd5;">Bootstrap 5</span>
-                    <span class="badge mb-1 px-2 py-1" style="background-color: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd;">Apache Server</span>
+                    <span
+                      class="badge me-1 mb-1 px-2 py-1"
+                      style="
+                        background-color: #f3e8ff;
+                        color: #8b5cf6;
+                        border: 1px solid #e9d5ff;
+                      "
+                      >PHP Native</span
+                    >
+                    <span
+                      class="badge me-1 mb-1 px-2 py-1"
+                      style="
+                        background-color: #e2ece9;
+                        color: #2d6a4f;
+                        border: 1px solid #b7e4c7;
+                      "
+                      >MySQL Database</span
+                    >
+                    <span
+                      class="badge me-1 mb-1 px-2 py-1"
+                      style="
+                        background-color: #fff0f3;
+                        color: #ff7096;
+                        border: 1px solid #ffccd5;
+                      "
+                      >Bootstrap 5</span
+                    >
+                    <span
+                      class="badge mb-1 px-2 py-1"
+                      style="
+                        background-color: #e0f2fe;
+                        color: #0284c7;
+                        border: 1px solid #bae6fd;
+                      "
+                      >Apache Server</span
+                    >
                   </div>
-
-                  <!-- Tombol Aksi -->
                   <div class="d-grid">
                     <a
                       href="http://earwanaarsip.infinityfreeapp.com/login.php"
@@ -621,12 +816,24 @@
       </div>
     </div>
 
-<!-- MODAL 3: GREENLEAF UI/UX (PASTEL SOFT & ESTETIK) -->
+    <!-- MODAL 3: GREENLEAF UI/UX -->
     <div class="modal fade" id="modalUi" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content rounded-4 border-0 p-3 shadow-lg" style="background: linear-gradient(135deg, #f3f8f5 0%, #fffafc 100%); border: 2px solid #b7e4c7 !important;">
+        <div
+          class="modal-content rounded-4 border-0 p-3 shadow-lg"
+          style="
+            background: linear-gradient(135deg, #f3f8f5 0%, #fffafc 100%);
+            border: 2px solid #b7e4c7 !important;
+          "
+        >
           <div class="modal-header border-0 pb-0">
-            <h4 class="modal-title fw-bold" style="font-family: 'Quicksand', sans-serif; color: #2d6a4f;">
+            <h4
+              class="modal-title fw-bold"
+              style="
+                font-family: &quot;Quicksand&quot;, sans-serif;
+                color: #2d6a4f;
+              "
+            >
               🎨 Desain UI/UX GreenLeaf Store
             </h4>
             <button
@@ -638,53 +845,132 @@
           </div>
           <div class="modal-body py-4">
             <div class="row g-4 align-items-center">
-              <!-- Sisi Kiri: Pratinjau Desain Figma -->
               <div class="col-lg-7">
-                <div class="p-2 rounded-4 shadow-sm bg-white border" style="border-color: #b7e4c7 !important;">
+                <div
+                  class="p-2 rounded-4 shadow-sm bg-white border"
+                  style="border-color: #b7e4c7 !important"
+                >
                   <img
                     src="GreenLeaf.png"
                     class="img-fluid rounded-3 w-100"
                     alt="UI/UX GreenLeaf Figma"
-                    style="max-height: 480px; object-fit: contain; background-color: #ffffff;"
+                    style="
+                      max-height: 480px;
+                      object-fit: contain;
+                      background-color: #ffffff;
+                    "
                   />
-                  <p class="text-center small fw-semibold mt-2 mb-0" style="color: #2d6a4f;">🌿 Pratinjau Prototype & Layout Figma</p>
+                  <p
+                    class="text-center small fw-semibold mt-2 mb-0"
+                    style="color: #2d6a4f"
+                  >
+                    🌿 Pratinjau Prototype & Layout Figma
+                  </p>
                 </div>
               </div>
-
-              <!-- Sisi Kanan: Penjelasan & Detail UI/UX -->
               <div class="col-lg-5">
-                <div class="p-3 rounded-4 shadow-sm" style="background-color: rgba(255, 255, 255, 0.9); border: 1.5px solid #b7e4c7;">
-                  <span class="badge mb-3 px-3 py-2 rounded-pill fw-bold" style="background-color: #d8f3dc; color: #2d6a4f; font-size: 0.8rem;">
+                <div
+                  class="p-3 rounded-4 shadow-sm"
+                  style="
+                    background-color: rgba(255, 255, 255, 0.9);
+                    border: 1.5px solid #b7e4c7;
+                  "
+                >
+                  <span
+                    class="badge mb-3 px-3 py-2 rounded-pill fw-bold"
+                    style="
+                      background-color: #d8f3dc;
+                      color: #2d6a4f;
+                      font-size: 0.8rem;
+                    "
+                  >
                     🌱 UI/UX Design Project
                   </span>
-                  <h5 class="fw-bold mb-2" style="font-family: 'Quicksand', sans-serif; color: #3b3036;">Tentang Proyek Ini</h5>
-                  <p class="text-secondary small mb-3" style="line-height: 1.6;">
-                    <strong>GreenLeaf Store</strong> adalah perancangan antarmuka toko online tanaman hias modern yang berfokus pada kenyamanan visual (*user experience*) dengan konsep organik dan natural.
+                  <h5
+                    class="fw-bold mb-2"
+                    style="
+                      font-family: &quot;Quicksand&quot;, sans-serif;
+                      color: #3b3036;
+                    "
+                  >
+                    Tentang Proyek Ini
+                  </h5>
+                  <p class="text-secondary small mb-3" style="line-height: 1.6">
+                    <strong>GreenLeaf Store</strong> adalah perancangan
+                    antarmuka toko online tanaman hias modern yang berfokus pada
+                    kenyamanan visual dengan konsep organik dan natural.
                   </p>
-
-                  <h6 class="fw-bold small mb-2" style="color: #4a353f;">✨ Fokus & Fitur Desain:</h6>
-                  <ul class="list-unstyled small text-secondary mb-3" style="line-height: 1.8;">
-                    <li>🌿 <strong>Organic Color Palette:</strong> Kombinasi warna hijau daun dan krem yang menenangkan.</li>
-                    <li>📱 <strong>Mobile & Web Layout:</strong> Tata letak responsif untuk berbagai ukuran layar.</li>
-                    <li>🧭 <strong>Clean Navigation:</strong> Alur navigasi intuitif untuk memudahkan pencarian tanaman.</li>
-                    <li>✨ <strong>Design System:</strong> Konsistensi komponen, tipografi, dan tombol interaktif.</li>
+                  <h6 class="fw-bold small mb-2" style="color: #4a353f">
+                    ✨ Fokus & Fitur Desain:
+                  </h6>
+                  <ul
+                    class="list-unstyled small text-secondary mb-3"
+                    style="line-height: 1.8"
+                  >
+                    <li>
+                      🌿 <strong>Organic Color Palette:</strong> Kombinasi warna
+                      hijau daun dan krem yang menenangkan.
+                    </li>
+                    <li>
+                      📱 <strong>Mobile & Web Layout:</strong> Tata letak
+                      responsif untuk berbagai ukuran layar.
+                    </li>
+                    <li>
+                      🧭 <strong>Clean Navigation:</strong> Alur navigasi
+                      intuitif untuk memudahkan pencarian tanaman.
+                    </li>
+                    <li>
+                      ✨ <strong>Design System:</strong> Konsistensi komponen,
+                      tipografi, dan tombol interaktif.
+                    </li>
                   </ul>
-
-                  <h6 class="fw-bold small mb-2" style="color: #4a353f;">🛠️ Tools & Metode:</h6>
+                  <h6 class="fw-bold small mb-2" style="color: #4a353f">
+                    🛠️ Tools & Metode:
+                  </h6>
                   <div class="mb-4">
-                    <span class="badge me-1 mb-1 px-2 py-1" style="background-color: #f3e8ff; color: #8b5cf6; border: 1px solid #e9d5ff;">Figma</span>
-                    <span class="badge me-1 mb-1 px-2 py-1" style="background-color: #e2ece9; color: #2d6a4f; border: 1px solid #b7e4c7;">Prototyping</span>
-                    <span class="badge me-1 mb-1 px-2 py-1" style="background-color: #fff0f3; color: #ff7096; border: 1px solid #ffccd5;">UI/UX Research</span>
-                    <span class="badge mb-1 px-2 py-1" style="background-color: #e0f2fe; color: #0284c7; border: 1px solid #bae6fd;">Design System</span>
+                    <span
+                      class="badge me-1 mb-1 px-2 py-1"
+                      style="
+                        background-color: #f3e8ff;
+                        color: #8b5cf6;
+                        border: 1px solid #e9d5ff;
+                      "
+                      >Figma</span
+                    >
+                    <span
+                      class="badge me-1 mb-1 px-2 py-1"
+                      style="
+                        background-color: #e2ece9;
+                        color: #2d6a4f;
+                        border: 1px solid #b7e4c7;
+                      "
+                      >Prototyping</span
+                    >
+                    <span
+                      class="badge me-1 mb-1 px-2 py-1"
+                      style="
+                        background-color: #fff0f3;
+                        color: #ff7096;
+                        border: 1px solid #ffccd5;
+                      "
+                      >UI/UX Research</span
+                    >
+                    <span
+                      class="badge mb-1 px-2 py-1"
+                      style="
+                        background-color: #e0f2fe;
+                        color: #0284c7;
+                        border: 1px solid #bae6fd;
+                      "
+                      >Design System</span
+                    >
                   </div>
-
-                  <!-- Tombol Aksi -->
                   <div class="d-grid">
                     <a
                       href="https://www.figma.com/design/5VWGRmivpeiS6xDrCLAeZh/GreenLeaf"
                       target="_blank"
                       class="btn btn-pastel-pink btn-sm rounded-pill py-2 fw-bold text-decoration-none text-white shadow-sm"
-                      style="background-color: #2d6a4f;"
+                      style="background-color: #2d6a4f"
                     >
                       Lihat File Figma ↗
                     </a>
@@ -697,12 +983,24 @@
       </div>
     </div>
 
-    <!-- MODAL 4: ANALISIS KEAMANAN OWASP (PASTEL SOFT & PROFESIONAL) -->
+    <!-- MODAL 4: ANALISIS KEAMANAN OWASP -->
     <div class="modal fade" id="modalOwasp" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content rounded-4 border-0 p-3 shadow-lg" style="background: linear-gradient(135deg, #f0f7ff 0%, #fffafc 100%); border: 2px solid #bae6fd !important;">
+        <div
+          class="modal-content rounded-4 border-0 p-3 shadow-lg"
+          style="
+            background: linear-gradient(135deg, #f0f7ff 0%, #fffafc 100%);
+            border: 2px solid #bae6fd !important;
+          "
+        >
           <div class="modal-header border-0 pb-0">
-            <h4 class="modal-title fw-bold" style="font-family: 'Quicksand', sans-serif; color: #0369a1;">
+            <h4
+              class="modal-title fw-bold"
+              style="
+                font-family: &quot;Quicksand&quot;, sans-serif;
+                color: #0369a1;
+              "
+            >
               🛡️ Analisis Keamanan Web (OWASP Top 10)
             </h4>
             <button
@@ -714,54 +1012,113 @@
           </div>
           <div class="modal-body py-4">
             <div class="row g-4 align-items-center">
-              <!-- Sisi Kiri: Ilustrasi / Kartu Security Assessment -->
               <div class="col-lg-7">
-                <div class="p-4 rounded-4 shadow-sm bg-white border text-center" style="border-color: #bae6fd !important; min-height: 380px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                  <div style="font-size: 5rem;" class="mb-3">🔒💻🛡️</div>
-                  <h5 class="fw-bold" style="color: #0369a1;">Security Vulnerability Assessment</h5>
+                <div
+                  class="p-4 rounded-4 shadow-sm bg-white border text-center"
+                  style="
+                    border-color: #bae6fd !important;
+                    min-height: 380px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <div style="font-size: 5rem" class="mb-3">🔒💻🛡️</div>
+                  <h5 class="fw-bold" style="color: #0369a1">
+                    Security Vulnerability Assessment
+                  </h5>
                   <p class="text-muted small px-4 mb-0">
-                    Pengujian sistematis dan evaluasi keamanan tingkat lanjut untuk mengidentifikasi celah kerentanan serta mitigasi risiko eksploitasi data pada aplikasi web.
+                    Pengujian sistematis dan evaluasi keamanan tingkat lanjut
+                    untuk mengidentifikasi celah kerentanan serta mitigasi
+                    risiko eksploitasi data pada aplikasi web.
                   </p>
                 </div>
               </div>
-
-              <!-- Sisi Kanan: Penjelasan & Detail Keamanan -->
               <div class="col-lg-5">
-                <div class="p-3 rounded-4 shadow-sm" style="background-color: rgba(255, 255, 255, 0.9); border: 1.5px solid #bae6fd;">
-                  <span class="badge mb-3 px-3 py-2 rounded-pill fw-bold" style="background-color: #e0f2fe; color: #0369a1; font-size: 0.8rem;">
+                <div
+                  class="p-3 rounded-4 shadow-sm"
+                  style="
+                    background-color: rgba(255, 255, 255, 0.9);
+                    border: 1.5px solid #bae6fd;
+                  "
+                >
+                  <span
+                    class="badge mb-3 px-3 py-2 rounded-pill fw-bold"
+                    style="
+                      background-color: #e0f2fe;
+                      color: #0369a1;
+                      font-size: 0.8rem;
+                    "
+                  >
                     🛡️ Cyber Security Project
                   </span>
-                  <h5 class="fw-bold mb-2" style="font-family: 'Quicksand', sans-serif; color: #3b3036;">Tentang Proyek Ini</h5>
-                  <p class="text-secondary small mb-3" style="line-height: 1.6;">
-                    <strong>Analisis Keamanan OWASP Top 10</strong> adalah evaluasi komprehensif yang berfokus pada pengujian kerentanan celah siber pada sistem informasi pengarsipan berbasis web untuk memastikan perlindungan data dan privasi instansi.
+                  <h5
+                    class="fw-bold mb-2"
+                    style="
+                      font-family: &quot;Quicksand&quot;, sans-serif;
+                      color: #3b3036;
+                    "
+                  >
+                    Tentang Proyek Ini
+                  </h5>
+                  <p class="text-secondary small mb-3" style="line-height: 1.6">
+                    <strong>Analisis Keamanan OWASP Top 10</strong> adalah
+                    evaluasi komprehensif yang berfokus pada pengujian
+                    kerentanan celah siber pada sistem informasi pengarsipan
+                    berbasis web.
                   </p>
-
-                  <h6 class="fw-bold small mb-2" style="color: #4a353f;">✨ Cakupan & Parameter Pengujian:</h6>
-                  <ul class="list-unstyled small text-secondary mb-3" style="line-height: 1.8;">
-                    <li>🔍 <strong>Black-Box Testing:</strong> Pengujian fungsionalitas dan keamanan tanpa melihat kode sumber.</li>
-                    <li>📋 <strong>OWASP Top 10 Standard:</strong> Evaluasi risiko global seperti SQL Injection, XSS, dan Broken Authentication.</li>
-                    <li>🛡️ <strong>Mitigasi Celah:</strong> Memberikan rekomendasi perbaikan dan penguatan sistem keamanan web.</li>
-                    <li>📊 <strong>Laporan Evaluasi:</strong> Dokumentasi hasil audit keamanan secara profesional.</li>
+                  <h6 class="fw-bold small mb-2" style="color: #4a353f">
+                    ✨ Cakupan & Parameter:
+                  </h6>
+                  <ul
+                    class="list-unstyled small text-secondary mb-3"
+                    style="line-height: 1.8"
+                  >
+                    <li>
+                      🔍 <strong>Black-Box Testing:</strong> Pengujian
+                      fungsionalitas tanpa melihat kode sumber.
+                    </li>
+                    <li>
+                      📑 <strong>OWASP Top 10:</strong> Evaluasi risiko seperti
+                      SQL Injection dan XSS.
+                    </li>
+                    <li>
+                      🛡️ <strong>Mitigasi Celah:</strong> Rekomendasi perbaikan
+                      dan penguatan sistem.
+                    </li>
                   </ul>
-
-                  <h6 class="fw-bold small mb-2" style="color: #4a353f;">🛠️ Metode & Standar:</h6>
+                  <h6 class="fw-bold small mb-2" style="color: #4a353f">
+                    🛠️ Metode & Standar:
+                  </h6>
                   <div class="mb-4">
-                    <span class="badge me-1 mb-1 px-2 py-1" style="background-color: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd;">OWASP Top 10</span>
-                    <span class="badge me-1 mb-1 px-2 py-1" style="background-color: #f3e8ff; color: #8b5cf6; border: 1px solid #e9d5ff;">Black-Box Testing</span>
-                    <span class="badge me-1 mb-1 px-2 py-1" style="background-color: #fff0f3; color: #ff7096; border: 1px solid #ffccd5;">Security Audit</span>
-                    <span class="badge mb-1 px-2 py-1" style="background-color: #e2ece9; color: #2d6a4f; border: 1px solid #b7e4c7;">Web Protection</span>
-                  </div>
-
-                  <!-- Tombol Aksi -->
-                  <div class="d-grid">
-                    <button
-                      type="button"
-                      class="btn btn-sm rounded-pill py-2 fw-bold text-white shadow-sm"
-                      style="background-color: #0369a1;"
-                      data-bs-dismiss="modal"
+                    <span
+                      class="badge me-1 mb-1 px-2 py-1"
+                      style="
+                        background-color: #e0f2fe;
+                        color: #0369a1;
+                        border: 1px solid #bae6fd;
+                      "
+                      >OWASP Top 10</span
                     >
-                      Tutup Laporan ✕
-                    </button>
+                    <span
+                      class="badge me-1 mb-1 px-2 py-1"
+                      style="
+                        background-color: #f3e8ff;
+                        color: #8b5cf6;
+                        border: 1px solid #e9d5ff;
+                      "
+                      >Black-Box Testing</span
+                    >
+                    <span
+                      class="badge mb-1 px-2 py-1"
+                      style="
+                        background-color: #fff0f3;
+                        color: #ff7096;
+                        border: 1px solid #ffccd5;
+                      "
+                      >Security Audit</span
+                    >
                   </div>
                 </div>
               </div>
@@ -771,17 +1128,300 @@
       </div>
     </div>
 
-    <!-- TOMBOL WHATSAPP MENGAMBANG -->
-    <a
-      href="https://wa.me/6283142320965?text=Halo%20Kak%20Elfa,%20saya%20tertarik%20mau%20bikin%20website!"
-      class="whatsapp-float"
-      target="_blank"
-      title="Hubungi via WhatsApp"
+    <!-- MODAL 5: KEDAI KOPI KITA (LAYOUT SEIMBANG & PROPORSIONAL) -->
+    <div
+      class="modal fade"
+      id="modalAppsScript"
+      tabindex="-1"
+      aria-hidden="true"
     >
-      💬
-    </a>
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div
+          class="modal-content rounded-4 border-0 p-3 shadow-lg"
+          style="
+            background: linear-gradient(135deg, #f0fdf4 0%, #fffafc 100%);
+            border: 2px solid #bbf7d0 !important;
+          "
+        >
+          <div class="modal-header border-0 pb-0">
+            <h4
+              class="modal-title fw-bold"
+              style="
+                font-family: &quot;Quicksand&quot;, sans-serif;
+                color: #15803d;
+              "
+            >
+              ☕ Kedai Kopi Kita - POS Console System
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body py-4">
+            <div class="row g-4 align-items-stretch">
+              <!-- SISI KIRI: GALERI SCREENSHOT POS (DISAMAKAN TINGGINYA) -->
+              <div class="col-lg-7 d-flex">
+                <div
+                  class="p-3 rounded-4 shadow-sm bg-white border w-100 d-flex flex-column"
+                  style="
+                    border-color: #bbf7d0 !important;
+                    max-height: 580px;
+                    overflow-y: auto;
+                  "
+                >
+                  <p
+                    class="text-center small fw-bold mb-3"
+                    style="color: #15803d"
+                  >
+                    🌿 Galeri Antarmuka Sistem POS (Scroll ke Bawah)
+                  </p>
 
-    <!-- Bootstrap JS Bundle -->
+                  <div class="row g-3">
+                    <!-- 1. Antrean Aktif -->
+                    <div class="col-12 text-center">
+                      <div class="p-2 border rounded-3 bg-light">
+                        <img
+                          src="Antrean Aktif.png"
+                          class="img-fluid rounded-2 w-100 mb-2"
+                          style="
+                            max-height: 220px;
+                            object-fit: contain;
+                            background: #fff;
+                          "
+                          alt="Antrean Pesanan Aktif"
+                        />
+                        <span class="small fw-semibold text-secondary"
+                          >1. Console Dapur & Kasir (Antrean Aktif)</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- 2. Form Pemesanan -->
+                    <div class="col-12 text-center">
+                      <div class="p-2 border rounded-3 bg-light">
+                        <img
+                          src="Form Pemesanan.png"
+                          class="img-fluid rounded-2 w-100 mb-2"
+                          style="
+                            max-height: 220px;
+                            object-fit: contain;
+                            background: #fff;
+                          "
+                          alt="Form Pemesanan"
+                        />
+                        <span class="small fw-semibold text-secondary"
+                          >2. Visual Checkout System & Menu Restoran</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- 3. Manajemen Produk -->
+                    <div class="col-12 text-center">
+                      <div class="p-2 border rounded-3 bg-light">
+                        <img
+                          src="Manajemen produk.png"
+                          class="img-fluid rounded-2 w-100 mb-2"
+                          style="
+                            max-height: 220px;
+                            object-fit: contain;
+                            background: #fff;
+                          "
+                          alt="Manajemen Produk"
+                        />
+                        <span class="small fw-semibold text-secondary"
+                          >3. Inventory & Price Catalog (Manajemen Produk)</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- 4. Kelola Kategori -->
+                    <div class="col-12 text-center">
+                      <div class="p-2 border rounded-3 bg-light">
+                        <img
+                          src="Kelola Kategori.png"
+                          class="img-fluid rounded-2 w-100 mb-2"
+                          style="
+                            max-height: 220px;
+                            object-fit: contain;
+                            background: #fff;
+                          "
+                          alt="Kelola Kategori"
+                        />
+                        <span class="small fw-semibold text-secondary"
+                          >4. Category Management (Kelola Kategori Menu)</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- 5. Riwayat Pesanan -->
+                    <div class="col-12 text-center">
+                      <div class="p-2 border rounded-3 bg-light">
+                        <img
+                          src="Riwayat Pemesanan.png"
+                          class="img-fluid rounded-2 w-100 mb-2"
+                          style="
+                            max-height: 220px;
+                            object-fit: contain;
+                            background: #fff;
+                          "
+                          alt="Riwayat Pesanan"
+                        />
+                        <span class="small fw-semibold text-secondary"
+                          >5. Audit Log Transaksi & Riwayat Pesanan</span
+                        >
+                      </div>
+                    </div>
+
+                    <!-- 6. Laporan Keuangan -->
+                    <div class="col-12 text-center">
+                      <div class="p-2 border rounded-3 bg-light">
+                        <img
+                          src="Laporan Keuangan.png"
+                          class="img-fluid rounded-2 w-100 mb-2"
+                          style="
+                            max-height: 220px;
+                            object-fit: contain;
+                            background: #fff;
+                          "
+                          alt="Laporan Keuangan"
+                        />
+                        <span class="small fw-semibold text-secondary"
+                          >6. Executive Dashboard & Revenue Analytics</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SISI KANAN: PENJELASAN LENGKAP & TOMBOL LIVE -->
+              <div class="col-lg-5 d-flex">
+                <div
+                  class="p-3 rounded-4 shadow-sm w-100 d-flex flex-column justify-content-between"
+                  style="
+                    background-color: rgba(255, 255, 255, 0.95);
+                    border: 1.5px solid #bbf7d0;
+                  "
+                >
+                  <div>
+                    <span
+                      class="badge mb-3 px-3 py-2 rounded-pill fw-bold"
+                      style="
+                        background-color: #dcfce7;
+                        color: #15803d;
+                        font-size: 0.8rem;
+                      "
+                    >
+                      ☕ POS & Cloud Scripting Project
+                    </span>
+                    <h5
+                      class="fw-bold mb-2"
+                      style="
+                        font-family: &quot;Quicksand&quot;, sans-serif;
+                        color: #3b3036;
+                      "
+                    >
+                      Tentang Proyek Ini
+                    </h5>
+                    <p
+                      class="text-secondary small mb-3"
+                      style="line-height: 1.6; text-align: justify"
+                    >
+                      <strong>Kedai Kopi Kita (Console System POS)</strong>
+                      adalah aplikasi web point of sales berbasis cloud yang
+                      dirancang secara profesional untuk mengotomatisasi seluruh
+                      alur operasional kafe dari hulu ke hilir secara terpusat.
+                    </p>
+
+                    <h6 class="fw-bold small mb-2" style="color: #4a353f">
+                      ✨ Fitur & Modul Utama:
+                    </h6>
+                    <ul
+                      class="list-unstyled small text-secondary mb-3"
+                      style="line-height: 1.7"
+                    >
+                      <li>
+                        🔥 <strong>Console Dapur:</strong> Pemantauan status
+                        pesanan real-time (Proses, Siap, Selesai).
+                      </li>
+                      <li>
+                        🛒 <strong>Visual Checkout:</strong> Sistem pemesanan
+                        cepat dengan kategori menu interaktif.
+                      </li>
+                      <li>
+                        📦 <strong>Inventory Stok:</strong> Pengaturan produk,
+                        harga dasar, dan gambar item.
+                      </li>
+                      <li>
+                        📂 <strong>Category Management:</strong> Pengelolaan
+                        kategori menu yang dinamis.
+                      </li>
+                      <li>
+                        🧾 <strong>Audit Log:</strong> Riwayat transaksi lengkap
+                        dengan cetak struk.
+                      </li>
+                      <li>
+                        📊 <strong>Executive Dashboard:</strong> Grafik omzet
+                        harian & produk terlaris.
+                      </li>
+                    </ul>
+
+                    <h6 class="fw-bold small mb-2" style="color: #4a353f">
+                      🛠️ Teknologi:
+                    </h6>
+                    <div class="mb-3">
+                      <span
+                        class="badge me-1 mb-1 px-2 py-1"
+                        style="
+                          background-color: #dcfce7;
+                          color: #15803d;
+                          border: 1px solid #bbf7d0;
+                        "
+                        >Google Apps Script</span
+                      >
+                      <span
+                        class="badge me-1 mb-1 px-2 py-1"
+                        style="
+                          background-color: #f3e8ff;
+                          color: #8b5cf6;
+                          border: 1px solid #e9d5ff;
+                        "
+                        >JavaScript</span
+                      >
+                      <span
+                        class="badge mb-1 px-2 py-1"
+                        style="
+                          background-color: #e0f2fe;
+                          color: #0284c7;
+                          border: 1px solid #bae6fd;
+                        "
+                        >Bootstrap 5</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="d-grid pt-2">
+                    <a
+                      href="https://script.google.com/macros/s/AKfycbz8RZudXg7gW4mnEv428veT0p1mSt0eb5cKkR1ZU1Tdn7N1OCSuCMrsN_Ef0qQn5_9Niw/exec"
+                      target="_blank"
+                      class="btn btn-pastel-pink btn-sm rounded-pill py-2 fw-bold text-decoration-none text-white shadow-sm"
+                      style="background-color: #15803d"
+                    >
+                      Buka Web App Live ↗
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
